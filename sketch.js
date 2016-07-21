@@ -21,7 +21,7 @@ estilo1();
 var anchoBorde=10;
 anchoBorde =10;  
 ellipse (mouseX,mouseY,diametro,diametro);
-
+triangle(30, 75, 58, 20, 86, 75);
 diametro = diametro +1;
 
 }
