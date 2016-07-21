@@ -20,6 +20,7 @@ function setup() {
   
 function draw() {
 estilo1();
+muchasVeces();
 var anchoBorde=10;
 anchoBorde =10;  
 ellipse (mouseX,mouseY,diametro,diametro);
@@ -35,4 +36,14 @@ function estilo1() {
   strokeWeight (2)
 stroke (355,242,0);
 fill(337,28,36); 
+}
+
+
+function muchasVeces() {
+
+var diez= 10;
+
+for(var i = 0; i < 1000; i++){
+ellipse (random(width),random (height),diez,diez);
+}
 }
