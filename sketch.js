@@ -12,23 +12,42 @@ diametro =50;
 
 
 function setup() {
-  createCanvas(800,600);
+  createCanvas(windowWidth,windowHeight);
   background (0,225,0)
+  
+  
 }
   
 function draw() {
 estilo1();
+muchasVeces();
 var anchoBorde=10;
 anchoBorde =10;  
 ellipse (mouseX,mouseY,diametro,diametro);
-triangle(30, 75, 58, 20, 86, 75);
-diametro = diametro +1;
+
+diametro = diametro +3;
 
 }
 
 function estilo1() {
   
   strokeWeight (2)
-stroke (255,242,0);
-fill(237,28,36); 
+stroke (355,242,0);
+fill(337,28,36); 
+}
+
+
+function muchasVeces() {
+
+var diez= 10;
+
+for(var i = 0; i < 1000; i++){
+ellipse (random(width),random (height),diez,diez);
+}
+}
+
+function mousePressed (){
+  if (mouseX > width /2) {
+    console.log("hola");
+  }
 }
