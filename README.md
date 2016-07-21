@@ -24,8 +24,6 @@ muchasVeces();
 var anchoBorde=10;
 anchoBorde =10;  
 ellipse (mouseX,mouseY,diametro,diametro);
-translate(width/2, height/2);
-rect(-26, -26, 52, 52);
 
 diametro = diametro +3;
 
@@ -47,3 +45,10 @@ for(var i = 0; i < 1000; i++){
 ellipse (random(width),random (height),diez,diez);
 }
 }
+
+function mousePressed (){
+  if (mouseX > width /2) {
+    console.log("hola");
+  }
+}
+
