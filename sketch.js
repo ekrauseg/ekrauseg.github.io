@@ -25,7 +25,7 @@ var anchoBorde=10;
 anchoBorde =10;  
 ellipse (mouseX,mouseY,diametro,diametro);
 
-diametro = diametro +3;
+diametro = diametro +1;
 
 }
 
